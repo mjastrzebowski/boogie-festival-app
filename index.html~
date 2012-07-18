@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>8. Polish Boogie Festival</title>
-  <link rel="stylesheet" href="css/jquery.mobile-1.1.0.css" />
+  <link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css" />
   <link rel="stylesheet" href="css/layout.css" />
-  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-  <script type="text/javascript" charset="utf-8" src="js/cordova-1.9.0.js"></script>
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mobile-1.0.1.min.js"></script>
+  <script type="text/javascript" src="js/cordova-1.9.0.js" charset="utf-8"></script>
   <script src="js/app.js"></script>
 </head>
 
@@ -127,7 +127,7 @@
 
 
 <!-- Start of news preview page: #news-prev -->
-<div data-role="page" id="news-prev" data-theme="news" class="news-prev">
+<div data-role="page" id="news-prev" data-theme="news-prev" class="news-prev">
   <div data-role="header">
     <a href="#news" data-direction="reverse" data-role="button" data-icon="arrow-l" data-inline="true" data-theme="a" data-mini="true">Wróć</a>
     <h1>Aktualności</h1>
