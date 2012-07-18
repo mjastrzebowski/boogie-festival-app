@@ -100,6 +100,3 @@ ul.buttons img {
 {
   white-space: normal;
 }
-#news ul {
-  padding: 0 14px;
-}
