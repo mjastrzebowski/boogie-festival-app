@@ -100,3 +100,17 @@ ul.buttons img {
 {
   white-space: normal;
 }
+#news ul {
+  padding: 0 14px;
+}
+
+.artist .ui-content {
+  padding: 16px;
+  text-align: center;
+}
+.artist .ui-content img {
+  width: 100%;
+}
+.artist .ui-content p {
+  text-align: left;
+}

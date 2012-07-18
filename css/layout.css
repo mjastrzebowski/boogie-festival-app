@@ -103,3 +103,14 @@ ul.buttons img {
 #news ul {
   padding: 0 14px;
 }
+
+.news-prev .ui-content {
+  padding: 16px;
+  text-align: center;
+}
+.news-prev .ui-content img {
+  width: 100%;
+}
+.news-prev .ui-content p {
+  text-align: left;
+}

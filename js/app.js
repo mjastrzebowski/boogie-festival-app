@@ -23,7 +23,7 @@ $('#news').live('pageshow', function(event, ui) {
     cache: false,
     success: function(json) {
       for (var i = 0; i < json.length; i++) {
-        var item = '<li data-role="list-divider">' + json[i].date + ' r.</li>';
+        var item = '<li data-role="list-divider">' + json[i].polishDate + ' r.</li>';
         item += '<li><a href="#news-prev?id=' + json[i].id_page + '">';
         item += '<h3>' + json[i].title + '</h3>';
         item += '<p>' + json[i].intro + '</p>';
@@ -92,11 +92,7 @@ function showNews(urlObj, options)
       cache: true,
       success: function(json) {
         
-        var news = '<img src="http://polishboogie.com/photos/news/' + json[0].name + '_medium.jpg" alt="' + json[0].title + '" />';
-        news += '<p class="bold">' + json[0].intro + '</p>';
-        news += json[0].newsContent;
-        
-        //$('#news-prev #content').append(item);
+        var news = json[0];
         
         // Get the object that represents the category we
         // are interested in. Note, that at this point we could
@@ -109,36 +105,25 @@ function showNews(urlObj, options)
         // content into is specified in the hash before the '?'.
         pageSelector = urlObj.hash.replace( /\?.*$/, "" );
         
-        if (news) {
+        if (news.title) {
           // Get the page we are going to dump our content into.
           var $page = $(pageSelector),
            
            // Get the header for the page.
-           $header = $page.children( ":jqmData(role=header)" ),
+           $header = $page.children(":jqmData(role=header)"),
            
            // Get the content area element for the page.
-           $content = $page.children( ":jqmData(role=content)" ),
+           $content = $page.children(":jqmData(role=content)"),
            
            // The markup we are going to inject into the content
            // area of the page.
-           markup = news;//<ul data-role='listview' data-inset='true'>";
-           
-           // The array of items for this category.
-           //cItems = category.items,
-           
-           // The number of items in the category.
-           //numItems = cItems.length;
-           
-           // Generate a list item for each item in the category
-           // and add it to our markup.
-           //for ( var i = 0; i < numItems; i++ ) {
-             //  markup += "<li>" + cItems[i].name + "</li>";
-           //}
-           //markup += "</ul>";
+           markup = '<img src="http://polishboogie.com/photos/news/' + news.name + '_medium.jpg" alt="' + news.title + '" />';
+           markup += '<p class="bold">' + news.intro + '</p>';
+           markup += news.newsContent;
            
            // Find the h1 element in our header and inject the name of
            // the category into it.
-           //$header.find("h1").html(news.title);
+           $header.find("h1").html(news.title);
            
            // Inject the category items markup into the content element.
            $content.html(markup);
@@ -149,9 +134,6 @@ function showNews(urlObj, options)
            // Subsequent calls to page() are ignored since a page/widget
            // can only be enhanced once.
            $page.page();
-           
-           // Enhance the listview we just injected.
-           $content.find(":jqmData(role=listview)").listview();
            
            // We don't want the data-url of the page we just modified
            // to be the url that shows up in the browser's location field,
