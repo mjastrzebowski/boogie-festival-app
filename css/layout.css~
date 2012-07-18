@@ -1,4 +1,4 @@
-body, div[data-role="page"] {
+body {
   background: #000 url('../img/bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -44,7 +44,7 @@ ul.buttons img {
   background-image: none;
 }
 #splash .ui-content {
-  padding: 32px;
+  
   text-align: center;
 }
 .logo {
