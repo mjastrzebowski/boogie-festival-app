@@ -1,4 +1,4 @@
-body {
+body, div[data-role="page"] {
   background: #000 url('../img/bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -13,7 +13,7 @@ body {
   padding: 15px 0;
 }
 .ui-header .ui-title {
-  margin: 0.6em 0 0.8em 25%;
+  margin: 0.6em 0 0.8em 28%;
 }
 
 .clear {
@@ -47,7 +47,10 @@ ul.buttons img {
   padding: 32px;
   text-align: center;
 }
-#splash .ui-content img {
+.logo {
+  padding: 0 32px;
+}
+.logo img {
   width: 100%;
 }
 
@@ -104,13 +107,13 @@ ul.buttons img {
   padding: 0 14px;
 }
 
-.artist .ui-content {
+.news-prev .ui-content {
   padding: 16px;
   text-align: center;
 }
-.artist .ui-content img {
+.news-prev .ui-content img {
   width: 100%;
 }
-.artist .ui-content p {
+.news-prev .ui-content p {
   text-align: left;
 }
