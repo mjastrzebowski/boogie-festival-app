@@ -126,3 +126,7 @@ ul.buttons img {
 .news-prev .ui-content p {
   text-align: left;
 }
+
+#info .ui-header .ui-title {
+  margin: 0.6em 30% 0.8em 30%;
+}

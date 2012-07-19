@@ -159,3 +159,55 @@ function showNews(urlObj, options)
     
   }
 }
+
+/*
+// When map page opens get location and display map
+$('.map').live("pagecreate", function() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position){
+      initialize(position.coords.latitude, position.coords.longitude);
+    });
+  }
+});
+
+function initialize(lat,lng) {
+  var latlng = new google.maps.LatLng(lat, lng);
+  var myOptions = {
+    zoom: 8,
+  center: latlng,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+}
+*/
+/*
+var mobileDemo = { 'center': '53.663853,17.360222', 'zoom': 15 };
+var polana = '53.664966,17.365372';
+var mdk = '53.663154,17.355158';
+////////////////////////////////////////////////////////////
+
+$('#info').live('pageinit', function() {
+  $('#map_canvas').gmap({'center': mobileDemo.center, 'zoom': mobileDemo.zoom, 'disableDefaultUI':true, 'callback': function() {
+  var self = this;
+  self.addMarker({'position': this.get('map').getCenter() }).click(function() {
+    self.openInfoWindow({ 'content': 'Hello World!' }, this);
+  });
+}}); 
+  });
+*/
+
+$('.map').live('pageshow', function() {
+  $.mobile.showPageLoadingMsg('test');
+  
+  $('#map_canvas').gmap('addMarker', {'position': '53.664966,17.365372', 'bounds': true}).click(function() {
+    $('#map_canvas').gmap('openInfoWindow', {'content': 'Polana Rodzinna w Parku Luizy'}, this);
+  });
+  $('#map_canvas').gmap('addMarker', {'position': '53.663154,17.355158', 'bounds': true}).click(function() {
+    $('#map_canvas').gmap('openInfoWindow', {'content': 'Miejski Dom Kultury'}, this);
+  });
+  
+  $('#map_canvas').gmap('closeInfoWindow');
+  $('#map_canvas').gmap('refresh');
+  
+  $.mobile.hidePageLoadingMsg('test');
+});

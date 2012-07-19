@@ -91,7 +91,7 @@ ul.buttons img {
   padding: 0 14px;
 }
 #schedule .ui-li-has-thumb {
-  padding: 1px;
+  padding: 1px 0;
 }
 #schedule li a {
   padding: 0 30px 0 100px;
@@ -125,4 +125,8 @@ ul.buttons img {
 }
 .news-prev .ui-content p {
   text-align: left;
+}
+
+#info .ui-header .ui-title {
+  margin: 0.6em 30% 0.8em 30%;
 }
