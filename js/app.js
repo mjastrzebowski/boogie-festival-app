@@ -1,3 +1,7 @@
+$(document).bind("mobileinit", function(){
+  $.mobile.defaultPageTransition = 'none';
+});
+
 $('body').live('pagebeforecreate', function(event){
   $.mobile.showPageLoadingMsg('test');
 });
@@ -24,7 +28,7 @@ $('#news').live('pageshow', function(event, ui) {
     success: function(json) {
       for (var i = 0; i < json.length; i++) {
         var item = '<li data-role="list-divider">' + json[i].polishDate + ' r.</li>';
-        item += '<li><a href="#news-prev?id=' + json[i].id_page + '">';
+        item += '<li><a href="#news-prev?id=' + json[i].id_page + '" data-transition="none">';
         item += '<h3>' + json[i].title + '</h3>';
         item += '<p>' + json[i].intro + '</p>';
         item += '</a></li>';

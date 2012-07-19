@@ -11,6 +11,7 @@ body {
 .ui-content {
   background: transparent;
   padding: 15px 0;
+  
 }
 .ui-header .ui-title {
   margin: 0.6em 0 0.8em 28%;
@@ -18,6 +19,9 @@ body {
 
 .clear {
   clear: both;
+}
+.strong {
+  font-weight: bold;
 }
 
 
@@ -30,7 +34,7 @@ ul.buttons li {
   float: left;
   width: 120px;
   text-align: center;
-  padding: 19px;
+  padding: 16px 19px;
 }
 
 ul.buttons img {
@@ -78,6 +82,9 @@ ul.buttons img {
 }
 .artist .ui-content p {
   text-align: left;
+}
+.band img, .news-prev img {
+  border: 2px solid #FF6000;
 }
 
 #schedule ul {

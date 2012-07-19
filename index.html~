@@ -16,15 +16,15 @@
 <body>
 
 <!-- Start of first page: #splash -->
-<div data-role="page" id="splash" data-theme="splash">
+<div data-role="page" id="splash" data-theme="splash" data-transition="slidefade">
   <div data-role="content" data-theme="a">
-    <img class="logo" src="img/logo.png" alt="8. Polish Boogie Festival" />
+    <div class="logo"><img src="img/logo.png" alt="8. Polish Boogie Festival" /></div>
   </div><!-- /content -->
 </div><!-- /page splash -->
 
 
 <!-- Start of second page: #main -->
-<div data-role="page" id="main" data-theme="main">
+<div data-role="page" id="main" data-theme="main" data-transition="slidefade">
   <div data-role="header" data-position="fixed">
     <h1>8. Polish Boogie Festival</h1>
   </div><!-- /header -->
@@ -34,10 +34,10 @@
     <div class="logo"><img src="img/logo.png" alt="8. Polish Boogie Festival" /></div>
     
     <ul class="buttons">
-      <li><a href="#schedule" data-role="button" title="Program"><img src="img/button-program.png" alt="Program" /></a></li>
-      <li><a href="#artists" data-role="button" title="Artyści"><img src="img/button-artysci.png" alt="Artyści" /></a></li>
-      <li><a href="#news" data-role="button" title="Aktualności"><img src="img/button-aktualnosci.png" alt="Aktualności" /></a></li>
-      <li><a href="#info" data-role="button" title="Informacje"><img src="img/button-informacje.png" alt="Informacje" /></a></li>
+      <li><a href="#schedule" data-role="button" title="Program" data-transition="none"><img src="img/button-program.png" alt="Program" /></a></li>
+      <li><a href="#artists" data-role="button" title="Artyści" data-transition="none"><img src="img/button-artysci.png" alt="Artyści" /></a></li>
+      <li><a href="#news" data-role="button" title="Aktualności" data-transition="none"><img src="img/button-aktualnosci.png" alt="Aktualności" /></a></li>
+      <li><a href="#info" data-role="button" title="Informacje" data-transition="none"><img src="img/button-informacje.png" alt="Informacje" /></a></li>
       <div class="clear"></div>
     </ul>
     
@@ -53,7 +53,7 @@
 
 
 <!-- Start of schedule page: #schedule -->
-<div data-role="page" id="schedule" data-theme="schedule">
+<div data-role="page" id="schedule" data-theme="schedule" data-transition="none">
   <div data-role="header" data-position="fixed">
     <a href="#main" data-direction="reverse" data-role="button" data-icon="arrow-l" data-inline="true" data-theme="a" data-mini="true">Wróć</a>
     <h1>Program</h1>
@@ -62,28 +62,28 @@
   <div data-role="content" data-theme="a">
     <ul data-role="listview">
       <li data-role="list-divider">Niedziela - 22.07.2012 - godz. 19:00</li>
-      <li><a href="index.html">
+      <li><a href="#" data-transition="none">
         <img src="media/adam-kulisz-trio-pl-thumb.jpg" />
         <h3>Koncert Inauguracyjny</h3>
         <p>Adam Kulisz Trio (PL)</p>
       </a></li>
       
       <li data-role="list-divider">Wtorek - 24.07.2012 - godz. 22:00</li>
-      <li><a href="index.html">
+      <li><a href="#" data-transition="none">
         <img src="media/burleska-thumb.jpg" />
         <h3>Kino pod Gwiazdami</h3>
         <p>"Burleska" (reż. Steve Antin)</p>
       </a></li>
       
       <li data-role="list-divider">Środa - 25.07.2012 - godz. 22:00</li>
-      <li><a href="index.html">
+      <li><a href="#" data-transition="none">
         <img src="media/bugsy-malone-thumb.jpg" />
         <h3>Kino pod Gwiazdami</h3>
         <p>"Bugsy Malone" (reż. Alan Parker)</p>
       </a></li>
       
       <li data-role="list-divider">Czwartek - 26.07.2012 - godz. 20:00</li>
-      <li><a href="index.html">
+      <li><a href="#" data-transition="none">
         <img src="media/zydeco-flow-pl-thumb.jpg" />
         <h3>Koncerty</h3>
         <p>Burnin' Hearts (PL)</p>
@@ -91,14 +91,14 @@
       </a></li>
       
       <li data-role="list-divider">Piątek - 27.07.2012 - godz. 22:00</li>
-      <li><a href="index.html">
+      <li><a href="#" data-transition="none">
         <img src="media/boogie-woogie-party-thumb.jpg" />
         <h3>Boogie-Woogie Party</h3>
         <p>Impreza w stylu lat 20-69</p>
       </a></li>
       
       <li data-role="list-divider">Sobota - 28.07.2012 - godz. 20:00</li>
-      <li><a href="index.html">
+      <li><a href="#" data-transition="none">
         <img src="media/david-giorcelli-es-thumb.jpg" />
         <h3>Koncert Galowy</h3>
         <p>B.B. & The Blues Shacks (DE)</p>
@@ -113,7 +113,7 @@
 
 
 <!-- Start of news page: #news -->
-<div data-role="page" id="news" data-theme="news">
+<div data-role="page" id="news" data-theme="news" data-transition="none">
   <div data-role="header" data-position="fixed">
     <a href="#main" data-direction="reverse" data-role="button" data-icon="arrow-l" data-inline="true" data-theme="a" data-mini="true">Wróć</a>
     <h1>Aktualności</h1>
@@ -128,60 +128,59 @@
 
 
 <!-- Start of news preview page: #news-prev -->
-<div data-role="page" id="news-prev" data-theme="news-prev" class="news-prev">
+<div data-role="page" id="news-prev" data-theme="news-prev" class="news-prev" data-transition="none">
   <div data-role="header" data-position="fixed">
     <a href="#news" data-direction="reverse" data-role="button" data-icon="arrow-l" data-inline="true" data-theme="a" data-mini="true">Wróć</a>
     <h1>Aktualności</h1>
   </div><!-- /header -->
   
   <div id="content" data-role="content" data-theme="a">
-    <h1>test</h1>
+    <h1>Błąd połączenia z serwerem.</h1>
   </div><!-- /content -->
 </div><!-- /page news-prev -->
 
 
-<!-- Start of artist's page: #b-b-the-blues-shacks-de -->
-<div data-role="page" id="b-b-the-blues-shacks-de" data-theme="artist" class="artist">
-  <div data-role="header" data-position="fixed">
-    <a href="#artists" data-direction="reverse" data-role="button" data-icon="arrow-l" data-inline="true" data-theme="a">Wróć</a>
-    <h1>B. B. & The Blues Shacks (DE)</h1>
-  </div><!-- /header -->
-  
-  <div data-role="content" data-theme="a">
-    <img src="media/b-b-the-blues-shacks-de.jpg" alt="B. B. & The Blues Shacks (DE)" />
-    <p class="bold">B.B. & The Blues Shacks to niemiecki zespół założony w 1989 roku przez Andreasa Arlta, gitarzystę i wokalistę. Jak sam mówi, jego zespół serwuje gustowną mieszankę bluesa i soulu, doprawioną sercem i duszą.</p>
-    <p>Tych pięcioro uzdolnionych muzyków wydało dotychczas 11 albumów, z czego ostatni otrzymał nagrodę Grammy. Swoimi koncertami porywają tłumy nie tylko z całej Europy - na swoim koncie mają również występ przed 10 tysięczną publiką w Los Angeles.</p>
-    <p>Skład zespołu: <br />
-      Andreas Arlt - gitara, śpiew<br />
-      Michael Arlt - harmonijka ustna, śpiew<br />
-      Bernhard Egger - bębny, śpiew<br />
-      Henning Hauerken - kontrabas, gitara basowa<br />
-      Dennis Koeckstadt - instrumenty klawiszowe</p>
-  </div><!-- /content -->
-</div><!-- /page b-b-the-blues-shacks-de -->
-
-
 <!-- Start of artists page: #artists -->
-<div data-role="page" id="artists" data-theme="artist" class="artist">
+<div data-role="page" id="artists" data-theme="artist" class="artist" data-transition="none">
   <div data-role="header" data-position="fixed">
-    <a href="#main" data-direction="reverse" data-role="button" data-icon="arrow-l" data-inline="true" data-theme="a" data-mini="true">Wróć</a>
+    <a href="#main" data-direction="reverse" data-role="button" data-icon="arrow-l" data-inline="true" data-theme="a" data-mini="true" data-transition="none">Wróć</a>
     <h1>Artyści</h1>
   </div><!-- /header -->
   
   <div data-role="content" data-theme="a">
     <ul>
-      <li><a href="#b-b-the-blues-shacks-de" data-role="button" title="B. B. &amp; The Blues Shacks (DE)">
+      <li><a href="#b-b-the-blues-shacks-de" data-role="button" title="B. B. &amp; The Blues Shacks (DE)" data-transition="none">
         <img src="media/b-b-the-blues-shacks-de.jpg" alt="B. B. & The Blues Shacks (DE)" />
         <p>B. B. & The Blues Shacks (DE)</p></a></li>
-      <li><a href="#cedric-burnside-project-usa" data-role="button" title="Cedric Burnside Project (USA)">
+      <li><a href="#cedric-burnside-project-usa" data-role="button" title="Cedric Burnside Project (USA)" data-transition="none">
         <img src="media/cedric-burnside-project-usa.jpg" alt="Cedric Burnside Project (USA)" />
         <p>Cedric Burnside Project (USA)</p></a></li>
-      <li><a href="#boogie-boys-pl" data-role="button" title="Boogie Boys (PL)">
+      <li><a href="#boogie-boys-pl" data-role="button" title="Boogie Boys (PL)" data-transition="none">
         <img src="media/boogie-boys-pl.jpg" alt="Boogie Boys (PL)" />
         <p>Boogie Boys (PL)</p></a></li>
-      <li><a href="#paddy-milner-uk" data-role="button" title="Paddy Milner (UK)">
+      <li><a href="#paddy-milner-uk" data-role="button" title="Paddy Milner (UK)" data-transition="none">
         <img src="media/paddy-milner-uk.jpg" alt="Paddy Milner (UK)" />
         <p>Paddy Milner (UK)</p></a></li>
+      <div class="clear"></div>
+      <li><a href="#david-giorcelli-es" data-role="button" title="David Giorcelli (ES)" data-transition="none">
+        <img src="media/david-giorcelli-es.jpg" alt="David Giorcelli (ES)" />
+        <p>David Giorcelli (ES)</p></a></li>
+      <div class="clear"></div>
+      <li><a href="#the-jet-sons-pl" data-role="button" title="The Jet-Sons (PL)" data-transition="none">
+        <img src="media/the-jet-sons-pl.jpg" alt="The Jet-Sons (PL)" />
+        <p>The Jet-Sons (PL)</p></a></li>
+      <div class="clear"></div>
+      <li><a href="#zydeco-flow-pl" data-role="button" title="Zydeco Flow (PL)" data-transition="none">
+        <img src="media/zydeco-flow-pl.jpg" alt="Zydeco Flow (PL)" />
+        <p>Zydeco Flow (PL)</p></a></li>
+      <div class="clear"></div>
+      <li><a href="#burnin-hearts-pl" data-role="button" title="Burnin' Hearts (PL)" data-transition="none">
+        <img src="media/burnin-hearts-pl.jpg" alt="Burnin' Hearts (PL)" />
+        <p>Burnin' Hearts (PL)</p></a></li>
+      <div class="clear"></div>
+      <li><a href="#adam-kulisz-trio-pl" data-role="button" title="Adam Kulisz Trio (PL)" data-transition="none">
+        <img src="media/adam-kulisz-trio-pl.jpg" alt="Adam Kulisz Trio (PL)" />
+        <p>Adam Kulisz Trio (PL)</p></a></li>
       <div class="clear"></div>
     </ul>
   </div><!-- /content -->
@@ -189,7 +188,7 @@
 
 
 <!-- Start of artist's page: #b-b-the-blues-shacks-de -->
-<div data-role="page" id="b-b-the-blues-shacks-de" data-theme="artist" class="artist">
+<div data-role="page" id="b-b-the-blues-shacks-de" data-theme="artist" class="artist band" data-transition="none">
   <div data-role="header" data-position="fixed">
     <a href="#artists" data-direction="reverse" data-role="button" data-icon="arrow-l" data-inline="true" data-theme="a">Wróć</a>
     <h1>B. B. & The Blues Shacks (DE)</h1>
@@ -197,7 +196,7 @@
   
   <div data-role="content" data-theme="a">
     <img src="media/b-b-the-blues-shacks-de.jpg" alt="B. B. & The Blues Shacks (DE)" />
-    <p class="bold">B.B. & The Blues Shacks to niemiecki zespół założony w 1989 roku przez Andreasa Arlta, gitarzystę i wokalistę. Jak sam mówi, jego zespół serwuje gustowną mieszankę bluesa i soulu, doprawioną sercem i duszą.</p>
+    <p class="strong">B.B. & The Blues Shacks to niemiecki zespół założony w 1989 roku przez Andreasa Arlta, gitarzystę i wokalistę. Jak sam mówi, jego zespół serwuje gustowną mieszankę bluesa i soulu, doprawioną sercem i duszą.</p>
     <p>Tych pięcioro uzdolnionych muzyków wydało dotychczas 11 albumów, z czego ostatni otrzymał nagrodę Grammy. Swoimi koncertami porywają tłumy nie tylko z całej Europy - na swoim koncie mają również występ przed 10 tysięczną publiką w Los Angeles.</p>
     <p>Skład zespołu: <br />
       Andreas Arlt - gitara, śpiew<br />
@@ -207,6 +206,24 @@
       Dennis Koeckstadt - instrumenty klawiszowe</p>
   </div><!-- /content -->
 </div><!-- /page b-b-the-blues-shacks-de -->
+
+
+<!-- Start of artist's page: #cedric-burnside-project-usa -->
+<div data-role="page" id="cedric-burnside-project-usa" data-theme="artist" class="artist band">
+  <div data-role="header" data-position="fixed">
+    <a href="#artists" data-direction="reverse" data-role="button" data-icon="arrow-l" data-inline="true" data-theme="a">Wróć</a>
+    <h1>Cedric Burnside Project (USA)</h1>
+  </div><!-- /header -->
+  
+  <div data-role="content" data-theme="a">
+    <img src="media/cedric-burnside-project-usa.jpg" alt="Cedric Burnside Project (USA)" />
+    <p class="strong">Cedric Burnside Project został założony przez Cedrica Burnside’a, który karierę perkusisty rozpoczął w zespole dziadka w wieku 13 lat.</p>
+    <p>Choć ciągle przedstawiany jest jako “wnuk legendarnego R.L. Burnside'a”, od lat pracuje na własny rachunek, dzięki czemu wyrobił sobie opinię jednego z najlepszych perkusistów bluesowych. Muzyka Projectu to energetyzująca mieszanka zawierająca elementy funku i soulu, lecz wciąż głęboko związana z bluesem.</p>
+    <p>Cedric Burnside Project:<br />
+      Cedric Burnside – perkusja, śpiew, gitary<br />
+      Trenton Ayers – gitary, bas</p>
+  </div><!-- /content -->
+</div><!-- /page cedric-burnside-project-usa -->
 
 </body>
 </html>
