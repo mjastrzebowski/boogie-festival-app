@@ -83,12 +83,15 @@ ul.buttons img {
 .artist .ui-content p {
   text-align: left;
 }
-.band img {
+.band img, .news-prev img {
   border: 2px solid #FF6000;
 }
 
 #schedule ul {
   padding: 0 14px;
+}
+#schedule .ui-li-has-thumb {
+  padding: 1px;
 }
 #schedule li a {
   padding: 0 30px 0 100px;

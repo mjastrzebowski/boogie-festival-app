@@ -90,6 +90,9 @@ ul.buttons img {
 #schedule ul {
   padding: 0 14px;
 }
+#schedule .ui-li-has-thumb {
+  padding: 1px 0;
+}
 #schedule li a {
   padding: 0 30px 0 100px;
 }
