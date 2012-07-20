@@ -94,6 +94,14 @@
         <p>Zydeco Flow (PL)</p>
       </li>
       
+      <li data-role="list-divider">Piątek, 27 lipca 2012 r. - godz. 20:00</li>
+      <li><!--<a href="#" data-transition="none">-->
+        <img src="media/cedric-burnside-project-usa-thumb.jpg" />
+        <h3>Koncerty</h3>
+        <p>The Jet-Sons (PL)</p>
+        <p>Cedric Burnside Project (USA)</p>
+      </li>
+      
       <li data-role="list-divider">Piątek, 27 lipca 2012 r. - godz. 22:00</li>
       <li><!--<a href="#" data-transition="none">-->
         <img src="media/boogie-woogie-party-thumb.jpg" />
@@ -359,7 +367,7 @@
     <a href="#map" data-direction="reverse" data-role="button" data-icon="info" data-inline="true" data-theme="a" data-transition="none" data-iconpos="right">Mapa</a>
   </div><!-- /header -->
   <div data-role="content" data-theme="a">
-    <h2>ENERGETYCZNE   BOOGIE-­‐WOOGIE     W   CZŁUCHOWIE  PO  RAZ ÓSMY!</h2>
+    <h3>ENERGETYCZNE   BOOGIE-­‐WOOGIE     W   CZŁUCHOWIE  PO  RAZ ÓSMY!</h3>
     <p class="strong">W      dniach      22-­‐28     lipca       w   Człuchowie  odbędzie    się 8.  Polish      Boogie      Festival    organizowany przez        Stowarzyszenie PRO KULTURA,    Miejski     Dom Kultury     w   Człuchowie  oraz MEDIA       INTER       SZOP.        Jest   to  impreza     dla fanów       muzyki      boogie,     bluesa      i   rock’n’rolla składająca  się nie tylko       z   koncertów      gwiazd      polskich    i   zagranicznych.      W   tym roku organizatorzy       przygotowują również     Samochodowe    Kino pod Gwiazdami   oraz Boogie-­‐Woogie     Party.</p>
 
 <p>8.     Polish      Boogie      Festival    rozpocznie  się koncertem   inauguracyjnym      w   sali widowiskowej MDK w   

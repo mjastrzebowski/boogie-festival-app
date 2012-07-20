@@ -86,6 +86,9 @@ ul.buttons img {
 .band img, .news-prev img {
   border: 2px solid #FF6000;
 }
+.band .ui-content p {
+  text-align: justify;
+}
 
 #schedule ul {
   padding: 0 14px;
