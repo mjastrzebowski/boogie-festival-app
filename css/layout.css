@@ -16,6 +16,9 @@ body {
 .ui-header .ui-title {
   margin: 0.6em 0 0.8em 28%;
 }
+.ui-btn-text {
+  color: #fff;
+}
 
 .clear {
   clear: both;
@@ -132,4 +135,8 @@ ul.buttons img {
 
 #info .ui-header .ui-title {
   margin: 0.6em 30% 0.8em 30%;
+}
+
+#map .ui-body-a, .ui-overlay-a {
+  color: #000;
 }

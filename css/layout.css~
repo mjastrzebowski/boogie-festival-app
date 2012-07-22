@@ -16,6 +16,9 @@ body {
 .ui-header .ui-title {
   margin: 0.6em 0 0.8em 28%;
 }
+.ui-btn-text {
+  color: #fff;
+}
 
 .clear {
   clear: both;
@@ -86,7 +89,7 @@ ul.buttons img {
 .band img, .news-prev img {
   border: 2px solid #FF6000;
 }
-.band p {
+.band .ui-content p {
   text-align: justify;
 }
 
