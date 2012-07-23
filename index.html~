@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>8. Polish Boogie Festival</title>
-  <link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css" />
+  <link rel="stylesheet" href="themes/boogie.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.1.1.min.css" />
   <link rel="stylesheet" href="css/layout.css" />
   <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.mobile-1.1.1.min.js"></script>
@@ -66,51 +67,54 @@
   <div data-role="content" data-theme="a">
     <ul data-role="listview">
       <li data-role="list-divider">Niedziela, 22 lipca 2012 r. - godz. 19:00</li>
-      <li><!--<a href="#" data-transition="none">-->
+      <li><a href="#map?pl=mdk" data-transition="none">
         <img src="media/adam-kulisz-trio-pl-thumb.jpg" />
         <h3>Koncert Inauguracyjny</h3>
-        <p>Adam Kulisz Trio (PL)</p>
+        <p>Adam Kulisz Trio (PL)</p></a>
       </li>
       
       <li data-role="list-divider">Wtorek, 24 lipca 2012 r. - godz. 22:00</li>
-      <li><!--<a href="#" data-transition="none">-->
+      <li><a href="#map?pl=kosmos" data-transition="none">
         <img src="media/burleska-thumb.jpg" />
         <h3>Kino pod Gwiazdami</h3>
-        <p>"Burleska" (reż. Steve Antin)</p>
+        <p>"Burleska" (reż. Steve Antin)</p></a>
       </li>
       
       <li data-role="list-divider">Środa, 25 lipca 2012 r. - godz. 22:00</li>
-      <li><!--<a href="#" data-transition="none">-->
+      <li><a href="#map?pl=kosmos" data-transition="none">
         <img src="media/bugsy-malone-thumb.jpg" />
         <h3>Kino pod Gwiazdami</h3>
-        <p>"Bugsy Malone" (reż. Alan Parker)</p>
+        <p>"Bugsy Malone" (reż. Alan Parker)</p></a>
       </li>
       
       <li data-role="list-divider">Czwartek, 26 lipca 2012 r. - godz. 20:00</li>
-      <li><!--<a href="#" data-transition="none">-->
+      <li><a href="#map?pl=polana" data-transition="none">
         <img src="media/zydeco-flow-pl-thumb.jpg" />
         <h3>Koncerty</h3>
         <p>Burnin' Hearts (PL)</p>
         <p>Zydeco Flow (PL)</p>
+        <p class="ui-li-aside">godz. <strong>20:00</strong></p></a>
       </li>
       
-      <li data-role="list-divider">Piątek, 27 lipca 2012 r. - godz. 20:00</li>
-      <li><!--<a href="#" data-transition="none">-->
+      <li data-role="list-divider">Piątek, 27 lipca 2012 r. <span class="ui-li-count">2</span></li>
+      <li>
         <img src="media/cedric-burnside-project-usa-thumb.jpg" />
         <h3>Koncerty</h3>
+        <p><strong>Rynek Miejski</strong></p>
         <p>The Jet-Sons (PL)</p>
         <p>Cedric Burnside Project (USA)</p>
+        <p class="ui-li-aside">godz. <strong>20:00</strong>&nbsp;&nbsp;&nbsp;</p>
       </li>
       
-      <li data-role="list-divider">Piątek, 27 lipca 2012 r. - godz. 22:00</li>
-      <li><!--<a href="#" data-transition="none">-->
+      <li>
         <img src="media/boogie-woogie-party-thumb.jpg" />
         <h3>Boogie-Woogie Party</h3>
         <p>Impreza w stylu lat 20-69</p>
+        <p class="ui-li-aside">godz. <strong>22:00</strong>&nbsp;&nbsp;&nbsp;</p>
       </li>
       
       <li data-role="list-divider">Sobota, 28 lipca 2012 r. - godz. 20:00</li>
-      <li><!--<a href="#" data-transition="none">-->
+      <li><a href="#map?pl=polana" data-transition="none">
         <img src="media/david-giorcelli-es-thumb.jpg" />
         <h3>Koncert Galowy</h3>
         <p>B.B. & The Blues Shacks (DE)</p>
@@ -369,23 +373,20 @@
   <div data-role="content" data-theme="a">
     <h3>ENERGETYCZNE   BOOGIE-­‐WOOGIE     W   CZŁUCHOWIE  PO  RAZ ÓSMY!</h3>
     <p class="strong">W      dniach      22-­‐28     lipca       w   Człuchowie  odbędzie    się 8.  Polish      Boogie      Festival    organizowany przez        Stowarzyszenie PRO KULTURA,    Miejski     Dom Kultury     w   Człuchowie  oraz MEDIA       INTER       SZOP.        Jest   to  impreza     dla fanów       muzyki      boogie,     bluesa      i   rock’n’rolla składająca  się nie tylko       z   koncertów      gwiazd      polskich    i   zagranicznych.      W   tym roku organizatorzy       przygotowują również     Samochodowe    Kino pod Gwiazdami   oraz Boogie-­‐Woogie     Party.</p>
-
-<p>8.     Polish      Boogie      Festival    rozpocznie  się koncertem   inauguracyjnym      w   sali widowiskowej MDK w   
-niedzielę,     22  lipca.      We  wtorek      i   środę       późnym      wieczorem   na  boisku      przy Ochotniczym Hufcu       Pracy       
-(KOSMOS)       odbędzie    się Samochodowe Kino pod Gwiazdami.  Czwartek    i   piątek      to  czas koncertów   na  
-Polanie Rodzinnej   w   Lasku       Luizy.      W   piątek      również     w   sali widowiskowej MDK DJ  KUCZIJO     
-poprowadzi     imprezę     w   stylu       lat ‘20-­‐’69.  Festiwal    zakończy    się w   sobotę      koncertem   galowym     na  
-Polanie Rodzinnej.</p>
-
-<p>Wśród  zaproszonych wykonawców  znajdują    się:     B.  B.  &   The Blues       Shacks      (DE),       Cedric      Burnside    
-Project (USA),      Boogie      Boys (PL),       Paddy       Milner      (UK),       David       Giorcelli   (ES),       The Jet-­‐Sons  (PL),       Zydeco      
-Flow   (PL),       Burnin'     Hearts      (PL),       Adam Kulisz      Trio (PL) oraz Tancerze    Boogie-­‐Woogie     z   klubu       Kick w   
-Pionkach.</p>
-
-<p>Bilety na  koncert     galowy      (15 zł -­‐      przedsprzedaż,      20  zł -­‐      w   dniu koncertu)   do  nabycia     w   Miejskim    
-Domu   Kultury     w   Człuchowie, ul. Traugutta   2,  tel. +48 59  834 11  32.     
-Patronat       nad Festiwalem  objęli      Marszałek   Województwa Pomorskiego oraz Burmistrz   Miasta      
-Człuchowa.</p>
+    <p>8.     Polish      Boogie      Festival    rozpocznie  się koncertem   inauguracyjnym      w   sali widowiskowej MDK w   
+    niedzielę,     22  lipca.      We  wtorek      i   środę       późnym      wieczorem   na  boisku      przy Ochotniczym Hufcu       Pracy       
+    (KOSMOS)       odbędzie    się Samochodowe Kino pod Gwiazdami.  Czwartek    i   piątek      to  czas koncertów   na  
+    Polanie Rodzinnej   w   Lasku       Luizy.      W   piątek      również     w   sali widowiskowej MDK DJ  KUCZIJO     
+    poprowadzi     imprezę     w   stylu       lat ‘20-­‐’69.  Festiwal    zakończy    się w   sobotę      koncertem   galowym     na  
+    Polanie Rodzinnej.</p>
+    <p>Wśród  zaproszonych wykonawców  znajdują    się:     B.  B.  &   The Blues       Shacks      (DE),       Cedric      Burnside    
+    Project (USA),      Boogie      Boys (PL),       Paddy       Milner      (UK),       David       Giorcelli   (ES),       The Jet-­‐Sons  (PL),       Zydeco      
+    Flow   (PL),       Burnin'     Hearts      (PL),       Adam Kulisz      Trio (PL) oraz Tancerze    Boogie-­‐Woogie     z   klubu       Kick w   
+    Pionkach.</p>
+    <p>Bilety na  koncert     galowy      (15 zł -­‐      przedsprzedaż,      20  zł -­‐      w   dniu koncertu)   do  nabycia     w   Miejskim    
+    Domu   Kultury     w   Człuchowie, ul. Traugutta   2,  tel. +48 59  834 11  32.     
+    Patronat       nad Festiwalem  objęli      Marszałek   Województwa Pomorskiego oraz Burmistrz   Miasta      
+    Człuchowa.</p>
 
   </div><!-- /content -->
 </div><!-- /page info -->

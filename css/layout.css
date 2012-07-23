@@ -111,6 +111,10 @@ ul.buttons img {
 #schedule .ui-li-static.ui-li-has-thumb {
   padding-left: 80px;
 }
+#schedule .ui-li-heading {
+  margin: 0.3em 0 0.6em 0;
+}
+
 
 #news .ui-li .ui-btn-text a.ui-link-inherit, 
 #news .ui-li-desc, 
@@ -135,6 +139,9 @@ ul.buttons img {
 
 #info .ui-header .ui-title {
   margin: 0.6em 30% 0.8em 30%;
+}
+#info .ui-content {
+  padding: 0 15px;
 }
 
 #map .ui-body-a, .ui-overlay-a {
