@@ -169,6 +169,12 @@ $('.map').live('pageshow', function() {
   $('#map_canvas').gmap('addMarker', {'position': '53.663154,17.355158', 'bounds': true}).click(function() {
     $('#map_canvas').gmap('openInfoWindow', {'content': 'Miejski Dom Kultury'}, this);
   });
+  $('#map_canvas').gmap('addMarker', {'position': '53.665093,17.358463', 'bounds': true}).click(function() {
+    $('#map_canvas').gmap('openInfoWindow', {'content': 'Rynek Miejski'}, this);
+  });
+  $('#map_canvas').gmap('addMarker', {'position': '53.666332,17.370908', 'bounds': true}).click(function() {
+    $('#map_canvas').gmap('openInfoWindow', {'content': 'Boisko OHP - Kosmos'}, this);
+  });
   
   $('#map_canvas').gmap('closeInfoWindow');
   $('#map_canvas').gmap('refresh');
