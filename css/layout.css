@@ -60,17 +60,17 @@ ul.buttons img {
   width: 100%;
 }
 
-#artists ul {
+#artists .ui-content ul {
   list-style-type: none;
   padding: 0;
 }
-#artists ul li {
+#artists .ui-content ul li {
   float: left;
   width: 280px;
   text-align: center;
   padding: 0 4px;
 }
-#artists ul p {
+#artists .ui-content ul p {
   text-align: center;
   margin: 4px 0;
 }
@@ -93,15 +93,18 @@ ul.buttons img {
   text-align: justify;
 }
 
-#schedule ul {
+#schedule .ui-content ul {
   padding: 0 14px;
 }
 #schedule .ui-li-has-thumb {
   padding: 1px 0;
 }
-#schedule li a {
+#schedule .content li a {
   padding: 0 30px 0 100px;
 }
+
+
+
 #schedule .ui-li-thumb, 
 #schedule .ui-listview .ui-li-icon {
   max-height: 124px;
@@ -109,12 +112,16 @@ ul.buttons img {
 }
 #schedule .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, 
 #schedule .ui-li-static.ui-li-has-thumb {
-  padding-left: 80px;
+  padding-left: 70px;
 }
 #schedule .ui-li-heading {
   margin: 0.3em 0 0.6em 0;
 }
-
+#schedule .ui-li-aside {
+  width: auto;
+  margin: 0.6em 0;
+  height: 15px;
+}
 
 #news .ui-li .ui-btn-text a.ui-link-inherit, 
 #news .ui-li-desc, 
@@ -122,7 +129,7 @@ ul.buttons img {
 {
   white-space: normal;
 }
-#news ul {
+#news .ui-content ul {
   padding: 0 14px;
 }
 

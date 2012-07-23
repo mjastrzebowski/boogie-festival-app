@@ -33,9 +33,9 @@ $('#news').live('pageshow', function(event, ui) {
         item += '<p>' + json[i].intro + '</p>';
         item += '</a></li>';
         
-        $('#news ul').append(item);
+        $('#news #content ul').append(item);
       }
-      $('#news ul').listview();
+      $('#news #content ul').listview();
       $.mobile.hidePageLoadingMsg('test');
     },
     error: function() {
